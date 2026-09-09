@@ -4,63 +4,33 @@ import { useEffect, useRef, useCallback } from "react";
 
 const projects = [
   {
-    title: "C Programming Repository",
+    title: "NetSage AI",
     description:
-      "Collection of C programs and problem-solving exercises. Covering fundamentals, pointers, memory management, and algorithmic challenges.",
-    technologies: ["C", "Algorithms", "Data Structures", "Linux"],
-    github: "https://github.com/arnavdev404",
-    language: "C",
-    languageColor: "#555555",
-  },
-  {
-    title: "C++ Programming Repository",
-    description:
-      "Object-oriented programming concepts, DSA practice and C++ projects. Includes STL usage, competitive programming solutions, and OOP patterns.",
-    technologies: ["C++", "OOP", "STL", "DSA"],
-    github: "https://github.com/arnavdev404",
-    language: "C++",
-    languageColor: "#f34b7d",
-  },
-  {
-    title: "Java Programming Repository",
-    description:
-      "Java fundamentals, OOP patterns, and application development. Comprehensive coverage of core Java concepts and modern features.",
-    technologies: ["Java", "OOP", "Collections", "Multithreading"],
-    github: "https://github.com/arnavdev404",
-    language: "Java",
-    languageColor: "#b07219",
-  },
-  {
-    title: "Python Programming Repository",
-    description:
-      "Python programs covering scripting, data analysis, automation, and machine learning basics. Includes libraries like NumPy and Pandas.",
-    technologies: ["Python", "NumPy", "Pandas", "ML"],
-    github: "https://github.com/arnavdev404",
+      "AI-powered network troubleshooting system that analyzes network symptoms and evidence, identifies root causes, and recommends diagnostic steps.",
+    technologies: [
+      "Python",
+      "AI/LLM",
+      "Cisco Packet Tracer",
+      "JavaScript",
+      "Gemini AI API",
+    ],
+    github: "https://netsage-ai-arnav.netlify.app/",
     language: "Python",
     languageColor: "#3572A5",
   },
   {
-    title: "Linux Learning Repository",
+    title: "Weather Web Application",
     description:
-      "Linux administration notes, shell scripts, and system configuration guides. Covering CLI, permissions, networking, and automation.",
-    technologies: ["Linux", "Bash", "Shell", "System Admin"],
-    github: "https://github.com/arnavdev404",
-    language: "Shell",
-    languageColor: "#89e051",
-  },
-  {
-    title: "JavaScript Learning Repository",
-    description:
-      "JavaScript learning repository and coding practice collection. Comprehensive notes and hands-on exercises covering modern JavaScript concepts.",
-    technologies: ["JavaScript", "ES6+", "DOM", "Async"],
-    github: "https://github.com/arnavdev404",
-    language: "JavaScript",
-    languageColor: "#f1e05a",
+      "Responsive weather application that fetches and displays real-time weather information using API integration and dynamic JavaScript data handling.",
+    technologies: ["HTML", "Tailwind CSS", "JavaScript", "REST API"],
+    github: "https://arnavweatherweb.netlify.app/",
+    language: "HTML",
+    languageColor: "#e34c26",
   },
   {
     title: "Portfolio Website",
     description:
-      "Personal portfolio website built using Next.js and Tailwind CSS. Featuring modern design, animations, responsive layout, and dark/light themes.",
+      "Personal portfolio website built with Next.js, TypeScript, Tailwind CSS, and React to showcase projects, skills, education, and experience.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     github: "https://github.com/arnavdev404",
     language: "TypeScript",
