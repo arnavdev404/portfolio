@@ -84,7 +84,9 @@ export default function Hero() {
           <div className="reveal">
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="#"
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 id="resume-btn"
                 className="btn-shine group inline-flex items-center gap-3 rounded-lg bg-accent px-8 py-4 font-[family-name:var(--font-jetbrains)] text-[11px] uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-accent-hover hover:gap-5 hover:shadow-[0_0_30px_rgba(217,136,136,0.25)] active:scale-[0.97]"
               >
