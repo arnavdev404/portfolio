@@ -32,7 +32,7 @@ const projects = [
     description:
       "Personal portfolio website built with Next.js, TypeScript, Tailwind CSS, and React to showcase projects, skills, education, and experience.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    github: "https://github.com/arnavdev404",
+    github: "https://anandarnav.in/",
     language: "TypeScript",
     languageColor: "#3178c6",
   },
