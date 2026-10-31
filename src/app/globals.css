@@ -3034,3 +3034,28 @@ iframe {
   opacity: 1;
 }
 
+.gmail-expand {
+  background: #ea4335;
+  color: white;
+  width: 56px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.gmail-expand:hover {
+  width: 178px;
+}
+
+.gmail-expand .social-expand-label {
+  display: inline-block;
+  white-space: nowrap;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-width 0.3s ease;
+}
+
+.gmail-expand:hover .social-expand-label {
+  opacity: 1;
+  max-width: 100px;
+}
