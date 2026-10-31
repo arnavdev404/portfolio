@@ -4,7 +4,7 @@ export default function SocialSidebar() {
   return (
     <aside
       aria-label="Social links"
-      className="fixed left-0 top-0 z-40 hidden h-full w-16 flex-col items-center justify-center border-r border-border bg-background/60 py-16 backdrop-blur-sm md:flex"
+      className="social-sidebar fixed left-0 top-0 z-40 hidden h-full w-16 flex-col items-center justify-center border-r border-border py-16 md:flex"
     >
       <ul className="flex flex-col items-center gap-8">
         {/* GitHub */}

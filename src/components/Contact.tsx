@@ -44,7 +44,7 @@ const contactInfo = [
     ),
     label: "Location",
     value: "Lucknow, Uttar Pradesh, India",
-    href: null,
+    href: "https://www.google.com/maps/search/?api=1&query=Lucknow%2C%20Uttar%20Pradesh%2C%20India",
   },
 ];
 
@@ -179,9 +179,9 @@ export default function Contact() {
                     id={`contact-${item.label.toLowerCase()}`}
                     className="card-hover group flex items-center gap-4 rounded-xl border border-border bg-surface-light p-5 transition-all duration-300"
                   >
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent transition-transform duration-300 group-hover:scale-110">
-                      {item.icon}
-                    </div>
+                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-black transition-transform duration-300 group-hover:scale-110">
+                          {item.icon}
+                        </div>
                     <div className="flex-1">
                       <p className="font-[family-name:var(--font-jetbrains)] text-[10px] uppercase tracking-[0.2em] text-text-muted">
                         {item.label}

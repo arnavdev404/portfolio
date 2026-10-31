@@ -26,6 +26,8 @@ export default function CustomCursor() {
       mouseY = e.clientY;
       // Move dot directly via transform (GPU-accelerated, avoids layout thrash)
       dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+      dot.style.visibility = "visible";
+      ring.style.visibility = "visible";
     };
 
     const animate = () => {
@@ -42,6 +44,11 @@ export default function CustomCursor() {
       animationId = requestAnimationFrame(animate);
     };
 
+    const handlePointerLeave = () => {
+      dot.style.visibility = "hidden";
+      ring.style.visibility = "hidden";
+    };
+
     const handleMouseEnterInteractive = () => {
       ring.classList.add("hover");
     };
@@ -56,6 +63,7 @@ export default function CustomCursor() {
     };
 
     window.addEventListener("mousemove", handleMouseMove, { passive: true });
+    window.addEventListener("mouseleave", handlePointerLeave, { passive: true });
     document.addEventListener("visibilitychange", handleVisibility);
     animationId = requestAnimationFrame(animate);
 
@@ -79,6 +87,7 @@ export default function CustomCursor() {
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseleave", handlePointerLeave);
       document.removeEventListener("visibilitychange", handleVisibility);
       document.removeEventListener("mouseover", handleMouseOver);
       document.removeEventListener("mouseout", handleMouseOut);
@@ -90,12 +99,12 @@ export default function CustomCursor() {
       <div
         ref={dotRef}
         className="cursor-dot hidden md:block"
-        style={{ left: 0, top: 0, willChange: "transform" }}
+        style={{ left: 0, top: 0, willChange: "transform", visibility: "hidden" }}
       />
       <div
         ref={ringRef}
         className="cursor-ring hidden md:block"
-        style={{ left: 0, top: 0, willChange: "transform" }}
+        style={{ left: 0, top: 0, willChange: "transform", visibility: "hidden" }}
       />
     </>
   );

@@ -215,7 +215,7 @@ export default function LearningJourney() {
                   <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                   <div className="flex items-start gap-4 relative z-10">
-                    <div className="text-accent transition-transform duration-300 group-hover:scale-110 flex-shrink-0 mt-0.5">
+                   <div className="current-focus-icon transition-transform duration-300 group-hover:scale-110 flex-shrink-0 mt-0.5">
                       {item.icon}
                     </div>
                     <div className="flex-1">

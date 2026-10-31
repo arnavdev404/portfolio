@@ -140,11 +140,11 @@ export default function About() {
             <div className="reveal grid grid-cols-3 gap-4 pt-4">
               <div className="rounded-xl border border-border bg-surface-light p-4 text-center">
                 <p className="text-2xl font-bold gradient-text">7+</p>
-                <p className="mt-1 font-[family-name:var(--font-jetbrains)] text-[10px] uppercase tracking-wider text-text-muted">Languages</p>
+                <p className="mt-1 font-[family-name:var(--font-jetbrains)] text-[10px] uppercase tracking-wider text-text-muted">Technologies</p>
               </div>
               <div className="rounded-xl border border-border bg-surface-light p-4 text-center">
                 <p className="text-2xl font-bold gradient-text">10+</p>
-                <p className="mt-1 font-[family-name:var(--font-jetbrains)] text-[10px] uppercase tracking-wider text-text-muted">Projects</p>
+                <p className="mt-1 font-[family-name:var(--font-jetbrains)] text-[10px] uppercase tracking-wider text-text-muted">Projects & Ideas </p>
               </div>
               <div className="rounded-xl border border-border bg-surface-light p-4 text-center">
                 <p className="text-2xl font-bold gradient-text">∞</p>
