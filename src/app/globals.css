@@ -3034,3 +3034,11 @@ iframe {
   opacity: 1;
 }
 
+.gmail-icon {
+  display: block;
+  width: 23px;
+  height: 23px;
+  fill: none !important;
+  stroke: white;
+  flex-shrink: 0;
+}
