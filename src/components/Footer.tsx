@@ -51,6 +51,7 @@ export default function Footer() {
           >
             <span className="social-expand-sign">
               <svg
+                className="gmail-icon"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="white"
