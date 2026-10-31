@@ -107,7 +107,7 @@ export default function About() {
               <p className="text-base leading-relaxed text-text-secondary md:text-lg">
                 I am a <span className="font-semibold text-text-primary">B.Tech Computer Science Engineering</span> student
                 specializing in <span className="text-accent">Artificial Intelligence and Machine Learning</span> at
-                IILM University, Greater Noida.
+                IILM University.
               </p>
             </div>
             <div className="reveal">
