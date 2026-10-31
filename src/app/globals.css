@@ -3034,28 +3034,29 @@ iframe {
   opacity: 1;
 }
 
-.gmail-expand {
-  background: #ea4335;
-  color: white;
-  width: 56px;
-  overflow: hidden;
-  transition: width 0.3s ease;
-}
 
-.gmail-expand:hover {
-  width: 178px;
+/* Gmail Footer Button Fix */
+.gmail-expand {
+  background: #EA4335;
+  width: 145px;
+  flex: 0 0 145px;
+  border-radius: 40px;
 }
 
 .gmail-expand .social-expand-label {
-  display: inline-block;
-  white-space: nowrap;
-  opacity: 0;
-  max-width: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease, max-width 0.3s ease;
+  position: static;
+  width: auto;
+  flex: 1;
+  opacity: 1;
+  overflow: visible;
+  text-align: center;
+  margin-right: 12px;
 }
 
-.gmail-expand:hover .social-expand-label {
-  opacity: 1;
-  max-width: 100px;
+/* Keep Gmail icon aligned */
+.gmail-expand .social-expand-sign {
+  flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
 }
+
