@@ -3034,23 +3034,87 @@ iframe {
   opacity: 1;
 }
 
+```css
+/* Social Expandable Buttons */
+.social-expand-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
 
-/* Gmail Footer Button Fix */
+  transition:
+    width 0.8s ease,
+    flex-basis 0.8s ease,
+    border-radius 0.8s ease;
+}
+
+/* Brand Colors */
+.github-expand {
+  background: #24292f;
+}
+
+.linkedin-expand {
+  background: #0A66C2;
+}
+
 .gmail-expand {
   background: #EA4335;
+}
+
+/* Icon */
+.social-expand-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
+}
+
+.social-expand-sign svg {
+  display: block;
+  width: 23px;
+  height: 23px;
+}
+
+/* Label hidden by default */
+.social-expand-label {
+  position: absolute;
+  left: 45px;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+
+  transition:
+    opacity 0.5s ease,
+    width 0.8s ease;
+}
+
+/* Expand only when hovered */
+.social-expand-btn:hover,
+.social-expand-btn:focus-visible {
   width: 145px;
-  flex: 0 0 145px;
+  flex-basis: 145px;
   border-radius: 40px;
 }
 
-.gmail-expand .social-expand-label {
-  position: static;
-  width: auto;
-  flex: 1;
+.social-expand-btn:hover .social-expand-label,
+.social-expand-btn:focus-visible .social-expand-label {
+  width: 95px;
   opacity: 1;
-  overflow: visible;
-  text-align: center;
-  margin-right: 12px;
 }
 
 /* Keep Gmail icon aligned */
@@ -3058,5 +3122,6 @@ iframe {
   flex: 0 0 45px;
   width: 45px;
   height: 45px;
+}
 }
 
