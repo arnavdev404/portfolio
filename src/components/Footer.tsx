@@ -72,7 +72,7 @@ export default function Footer() {
       {/* Footer Tagline */}
       <div className="mx-auto mt-6 max-w-7xl text-center">
         <p className="font-[family-name:var(--font-jetbrains)] text-[10px] uppercase tracking-[0.2em] text-text-muted">
-          ┈━═☆❣️POWERED BY CURIOSITY &amp; LATE NIGHTS❣️☆═━┈
+          ┈━ POWERED BY CURIOSITY &amp; LATE NIGHTS ━┈
         </p>
       </div>
     </footer>
